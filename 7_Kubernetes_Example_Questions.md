@@ -37,7 +37,7 @@ kind: Deployment
 metadata:
   name: flask-app
   labels:
-	app: flask-app
+    app: flask-app
 spec:
   replicas: 2
   selector:
@@ -147,7 +147,7 @@ kind: Deployment
 metadata:
   name: mysql
   labels:
-	app: mysql
+    app: mysql
 spec:
   replicas: 1
   selector:
@@ -196,7 +196,7 @@ kind: Deployment
 metadata:
   name: flask-app
   labels:
-	app: flask-app
+    app: flask-app
 spec:
   replicas: 2
   selector:
