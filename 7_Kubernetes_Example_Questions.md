@@ -210,8 +210,6 @@ spec:
       containers:
       - name: flask-app
         image: yourusername/flask-app:latest
-	ports:
-        - containerPort: 8080
         env:
         - name: MYSQL_HOST
           value: mysql-service
@@ -221,6 +219,8 @@ spec:
           value: password
         - name: MYSQL_DATABASE
           value: flaskdb
+	ports:
+        - containerPort: 8080
 ```
 
 #### Step 4: Create a Service YAML File for Flask App (flask-service.yaml)
