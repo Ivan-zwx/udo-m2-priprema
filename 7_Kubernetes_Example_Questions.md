@@ -210,8 +210,8 @@ spec:
       containers:
       - name: flask-app
         image: yourusername/flask-app:latest
-	ports
-	- containerPort: 8080
+        ports
+        - containerPort: 8080
         env:
         - name: MYSQL_HOST
           value: mysql-service
