@@ -65,8 +65,8 @@ spec:
   type: LoadBalancer
   ports:
   - port: 80
-	targetPort: 8080
-	protocol: TCP
+    targetPort: 8080
+    protocol: TCP
   selector:
     app: flask-app
 ```
@@ -183,8 +183,8 @@ metadata:
 spec:
   ports:
   - port: 3306
-	targetPort: 3306
-	protocol: TCP
+    targetPort: 3306
+    protocol: TCP
   selector:
     app: mysql
 ```
@@ -210,7 +210,7 @@ spec:
       containers:
       - name: flask-app
         image: yourusername/flask-app:latest
-		ports:
+	ports:
         - containerPort: 8080
         env:
         - name: MYSQL_HOST
@@ -233,8 +233,8 @@ spec:
   type: LoadBalancer
   ports:
   - port: 80
-	targetPort: 8080
-	protocol: TCP
+    targetPort: 8080
+    protocol: TCP
   selector:
     app: flask-app
 ```
